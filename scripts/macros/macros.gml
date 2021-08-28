@@ -11,7 +11,7 @@
 // Versions
 #macro mineimator_version			"1.2.8"
 #macro mineimator_version_extra		"Release Candidate 1"
-#macro mineimator_version_date		"2021.06.10"
+#macro mineimator_version_date		"2021.09.1"
 #macro gm_runtime					GM_runtime_version
 #macro minecraft_version			"1.17"
 
@@ -33,6 +33,10 @@
 // Files
 #macro language_file				languages_directory + "english.milanguage"
 #macro import_file					data_directory + "import.exe"
+
+#macro mouth_animator				working_directory + "converter.exe"
+#macro mouth_object					working_directory + "output_file\\"
+
 #macro settings_file				data_directory + "settings.midata"
 #macro legacy_file					data_directory + "legacy.midata"
 #macro block_preview_file			data_directory + "blockpreview.midata"
@@ -95,8 +99,11 @@
 
 // Colors
 #macro c_main						make_color_rgb(200, 200, 200)
-#macro c_secondary					make_color_rgb(67, 103, 163)
+#macro c_main_dark					make_color_rgb(52, 52, 52)
+#macro c_secondary					make_color_rgb(95, 57, 163)
+#macro c_secondary_dark				make_color_rgb(114, 67, 163)
 #macro c_text						make_color_rgb(10, 10, 10)
+#macro c_text_dark					make_color_rgb(255, 255, 255)
 #macro c_tips						make_color_rgb(40, 40, 40)
 #macro c_highlight					make_color_rgb(132, 159, 204)
 #macro c_alerts						make_color_rgb(240, 255, 159)

@@ -20,7 +20,7 @@ if (setting_minecraft_assets_new_version != "")
 	new_assets_stage = ""
 	new_assets_download_progress = 0
 	window_set_size(700, 580)
-	window_set_caption("Mine-imator")
+	window_set_caption("Mine-imator Violet")
 	alarm[0] = 1
 }
 

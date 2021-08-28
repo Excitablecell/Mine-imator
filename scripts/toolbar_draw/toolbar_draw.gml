@@ -105,6 +105,7 @@ toolbar_draw_button("toolbarexportimage", (popup = popup_exportimage), true, ico
 toolbar_draw_group(4)
 toolbar_draw_button("toolbarviewsecond", view_second.show, true, icons.VIEW_SECOND, action_toolbar_view_second)
 toolbar_draw_button("toolbarsettings", settings.show, true, icons.SETTINGS, action_toolbar_settings)
+toolbar_draw_button("alertmouth_animator", false, true, icons.MOUTH_ANIMATOR, action_toolbar_mouth_animator)
 
 toolbar_draw_group(1)
 tip_set_shortcut(setting_key_undo, setting_key_undo_control)
@@ -119,6 +120,7 @@ toolbar_draw_button("toolbarstop", false, true, icons.STOP, action_toolbar_play_
 toolbar_draw_button("toolbarrepeat", timeline_repeat, true, icons.LOOP, action_toolbar_play_repeat)
 toolbar_draw_button("toolbarseamlessrepeat", timeline_seamless_repeat, true, icons.LOOP_SEAMLESS, action_toolbar_seamless_repeat)
 toolbar_draw_button("toolbarshowseconds", timeline_show_seconds, true, icons.SHOW_SECONDS, action_toolbar_show_seconds)
+
 
 // Timestamp
 if (content_width >= cellsize * 3)

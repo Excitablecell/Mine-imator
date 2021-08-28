@@ -17,7 +17,6 @@ if (!render_camera) // Use work camera
 	cam_up[X] = -cx * xx * zz - cy * yy
 	cam_up[Y] = cy * xx - cx * yy * zz
 	cam_up[Z] = cx * (xx * xx + yy * yy)
-	
 	cam_fov = 45
 }
 else
@@ -47,7 +46,11 @@ else
 	cam_up[X] = mat[8]
 	cam_up[Y] = mat[9]
 	cam_up[Z] = mat[10]
-	cam_fov = max(1, render_camera.value[e_value.CAM_FOV])
+	if (render_camera.value[e_value.CAM_F_ENABLE] && checkbox_frameeditor_camlen)
+	{
+	cam_fov = arctan(render_height / 2 / render_camera.value[e_value.CAM_F]) * 100
+	}
+	else cam_fov = max(1, render_camera.value[e_value.CAM_FOV])
 }
 
 cam_near = 1

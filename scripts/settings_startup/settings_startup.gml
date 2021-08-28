@@ -229,6 +229,7 @@ checkbox_expand_frameeditor_ca = true
 checkbox_expand_frameeditor_distort = true
 
 checkbox_expand_frameeditor_itemslot = true
+checkbox_frameeditor_camlen = true
 
 settings_load()
 

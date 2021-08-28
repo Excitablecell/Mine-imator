@@ -5,6 +5,7 @@ current_step = 0
 minute_steps = 60 * 60
 delta = 1
 
+
 log("Windows startup")
 
 http_assets = null
@@ -18,7 +19,7 @@ window_height = 1
 window_set_focus()
 window_set_min_width(100)
 window_set_min_height(100)
-window_set_caption("Mine-imator")
+window_set_caption("Mine-imator Violet")
 
 window_state = ""
 window_busy = ""

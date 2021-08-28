@@ -3,9 +3,24 @@
 var capwid, text;
 capwid = text_caption_width("frameeditorcamerafov");
 
+// Camera length
+if (tl_edit.value[e_value.CAM_F_ENABLE] && checkbox_frameeditor_camlen)
+{
+	tab_control_meter()
+	draw_meter("frameeditorcameraf", dx, dy, dw, tl_edit.value[e_value.CAM_F], 50, 1, 20000, 230, 1, tab.camera.tbx_f, action_tl_frame_cam_f, capwid)
+	tab_next()
+}
+
 // FOV
-tab_control_meter()
-draw_meter("frameeditorcamerafov", dx, dy, dw, tl_edit.value[e_value.CAM_FOV], 50, 1, 170, 45, 1, tab.camera.tbx_fov, action_tl_frame_cam_fov, capwid)
+else{
+	tab_control_meter()
+	draw_meter("frameeditorcamerafov", dx, dy, dw, tl_edit.value[e_value.CAM_FOV], 50, 1, 170, 45, 1, tab.camera.tbx_fov, action_tl_frame_cam_fov, capwid)
+	tab_next()
+}
+
+// Camera length enable
+tab_control_checkbox()
+draw_checkbox("frameeditorcamerafenable",dx,dy,tl_edit.value[e_value.CAM_F_ENABLE],action_tl_frame_cam_f_enable)
 tab_next()
 
 // Blade amount
@@ -352,6 +367,10 @@ if (tl_edit.value[e_value.CAM_COLOR_CORRECTION] && checkbox_expand_frameeditor_c
 	
 	tab_control_meter()
 	draw_meter("frameeditorcameracolorcorrectionvibrance", dx, dy, dw, round(tl_edit.value[e_value.CAM_VIBRANCE] * 100), 50, 0, 100, 0, 1, tab.camera.tbx_vibrance, action_tl_frame_cam_clrcor_vibrance, capwid)
+	tab_next()
+	
+	tab_control_meter()
+	draw_meter("frameeditorcameracolorcorrectiontemperature", dx, dy, dw, round(tl_edit.value[e_value.CAM_TEMPERATURE] * 100), 50, -30, 30, 0, 1, tab.camera.tbx_temperature, action_tl_frame_cam_clrcor_temperature, capwid)
 	tab_next()
 	
 	tab_control_color()

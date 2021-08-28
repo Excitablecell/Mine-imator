@@ -14,6 +14,7 @@ project_video_height = value_get_real(map[?"video_height"], project_video_height
 project_video_template = find_videotemplate(project_video_width, project_video_height)
 project_video_keep_aspect_ratio = value_get_real(map[?"video_keep_aspect_ratio"], project_video_keep_aspect_ratio)
 project_tempo = value_get_real(map[?"tempo"], project_tempo)
+bezier = value_get_real(map[?"bezier"], bezier)
 	
 var tlmap = map[?"timeline"];
 if (ds_map_valid(tlmap))

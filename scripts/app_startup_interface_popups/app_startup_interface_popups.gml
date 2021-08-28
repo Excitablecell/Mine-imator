@@ -1,7 +1,7 @@
 /// app_startup_interface_popups()
 
 // Startup
-popup_startup = new_popup("startup", popup_startup_draw, 760, 586, true)
+popup_startup = new_popup("startup", popup_startup_draw, 760, 670, true)
 with (popup_startup)
 	recent_scroll = new(obj_scrollbar)
 

@@ -24,6 +24,7 @@ project_video_height = 720
 project_video_template = find_videotemplate(project_video_width, project_video_height)
 project_video_keep_aspect_ratio = true
 project_tempo = 24
+bezier = 0
 
 camera_work_reset()
 

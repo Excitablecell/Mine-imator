@@ -26,6 +26,7 @@ with (properties)
 		tbx_video_size_custom_width = new_textbox_integer()
 		tbx_video_size_custom_height = new_textbox_integer()
 		tbx_tempo = new_textbox_integer()
+		tbx_bezier = new_textbox_ndecimals()
 		tbx_name.next_tbx = tbx_author
 		tbx_author.next_tbx = tbx_description
 		tbx_description.next_tbx = tbx_name
@@ -458,6 +459,8 @@ with (frame_editor)
 		look_at_rotate = true
 		tbx_fov = new_textbox_integer()
 		tbx_fov.suffix = "°"
+		tbx_f = new_textbox_decimals()
+		tbx_f.suffix = "mm"
 		tbx_blade_amount = new_textbox_integer()
 		tbx_blade_angle = new_textbox_integer()
 		tbx_blade_angle.suffix = "°"
@@ -535,6 +538,10 @@ with (frame_editor)
 		tbx_saturation.suffix = "%"
 		tbx_vibrance = new_textbox_integer()
 		tbx_vibrance.suffix = "%"
+		tbx_temperature = new_textbox_integer()
+		tbx_temperature.suffix = "K"
+		tbx_bezierconfig = new_textbox_integer()
+		tbx_bezierconfig.suffix = "Scale"
 		
 		tbx_grain_strength = new_textbox_ninteger()
 		tbx_grain_strength.suffix = "%"
@@ -596,6 +603,10 @@ with (frame_editor)
 	
 	// Keyframe
 	keyframe = tab_add_category("frameeditorkeyframe", tab_frame_editor_keyframe, false)
+	with(keyframe)
+	{
+		tbx_bezier = new_textbox_ndecimals()
+	}
 }
 
 // Settings

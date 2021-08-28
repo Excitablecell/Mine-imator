@@ -5,12 +5,12 @@ var credittext, creditname;
 
 // Logo
 dx = content_x + content_width / 2 - 550 / 2
-dy = content_y + 10
+dy = content_y
 draw_image(spr_logo, 0, dx, dy)
 
 // Logo text
-dx += 175
-dy += 115
+dx += 0//175
+dy += 175//115
 draw_label(text_get("startupversion", text_get(test(trial_version, "startuptrial", "startupfull")), mineimator_version, mineimator_version_date), dx, dy)
 dy += string_height(" ")
 
@@ -37,9 +37,13 @@ dx = creditsx
 dy += string_height(" ")
 draw_label(text_get("startupcredits3", "David", "Nimi", "Marvin", "Voxy"), dx, dy)
 
+dx = creditsx
+dy += string_height(" ")
+draw_label(text_get("startupcredits4", "EXaniamtion", "Stanwade", "Catrina.Rin", "Chenny_Wang", "raw_chicken"), dx, dy)
+
 // Buttons
 dx = content_x
-dy = content_y + 160 + 70
+dy = content_y + 160 + 70 + 60
 dw = 200
 dh = 48
 
@@ -82,7 +86,7 @@ if (draw_button_normal("startupforums", dx, dy, dw, dh, e_button.TEXT, false, tr
    
 // Recent
 dx = content_x + 200 + 16
-dy = content_y + 160 + 70
+dy = content_y + 160 + 70 + 60
 dw = content_width - (dx - content_x)
 dh = content_height - (dy - content_y)
 draw_label(text_get("startuprecent") + ":", dx, dy - 22)

@@ -4,6 +4,9 @@
 globalvar debug_indent, debug_timer;
 debug_indent = 0
 debug_info = false
+globalvar bezier,last_bezier;
+bezier = 3
+last_bezier = bezier
 
 enums()
 randomize()

@@ -22,6 +22,7 @@ switch (argument0)
 	case e_value.LIGHT_SPOT_RADIUS: return 50
 	case e_value.LIGHT_SPOT_SHARPNESS: return 0.5
 	case e_value.CAM_FOV: return 45
+	case e_value.CAM_F: return 255
 	case e_value.CAM_BLADE_AMOUNT: return 0
 	case e_value.CAM_BLADE_ANGLE: return 0
 	case e_value.CAM_ROTATE_DISTANCE: return 100
@@ -60,6 +61,7 @@ switch (argument0)
 	case e_value.CAM_BRIGHTNESS: return 0
 	case e_value.CAM_SATURATION: return 1
 	case e_value.CAM_VIBRANCE: return 0
+	case e_value.CAM_TEMPERATURE: return 0
 	case e_value.CAM_COLOR_BURN: return c_white
 	case e_value.CAM_GRAIN_STRENGTH: return .10
 	case e_value.CAM_GRAIN_SATURATION: return .10
@@ -125,6 +127,8 @@ switch (argument0)
 	case e_value.TEXT_HALIGN:
 	case e_value.TEXT_VALIGN: return "center"
 	case e_value.TRANSITION: return "linear"
+	case e_value.BEZIERCONFIG: return 3
+	case e_value.BEZIER: return 0
 }
 
 return 0

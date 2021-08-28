@@ -49,6 +49,8 @@ ds_list_add(value_name_list,
 	"LIGHT_SPOT_RADIUS",
 	"LIGHT_SPOT_SHARPNESS",
 	"CAM_FOV",
+	"CAM_F",
+	"CAM_F_ENABLE",
 	"CAM_BLADE_AMOUNT",
 	"CAM_BLADE_ANGLE",
 	"CAM_ROTATE",
@@ -96,6 +98,7 @@ ds_list_add(value_name_list,
 	"CAM_BRIGHTNESS",
 	"CAM_SATURATION",
 	"CAM_VIBRANCE",
+	"CAM_TEMPERATURE",
 	"CAM_COLOR_BURN",
 	"CAM_GRAIN",
 	"CAM_GRAIN_STRENGTH",
@@ -170,7 +173,9 @@ ds_list_add(value_name_list,
 	"ITEM_SLOT",
 	"ITEM_NAME",
 	"VISIBLE",
-	"TRANSITION"
+	"TRANSITION",
+	"BEZIERCONFIG",
+	"BEZIER"
 )
 
 // Camera values
@@ -294,7 +299,8 @@ ds_list_add(transition_list,
 	"easeinoutback",
 	"easeinbounce",
 	"easeoutbounce",
-	"easeinoutbounce"
+	"easeinoutbounce",
+	"easebezier"
 )
 
 log("Make transitions")

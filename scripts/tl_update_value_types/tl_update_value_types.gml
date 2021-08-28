@@ -89,3 +89,6 @@ if (type = e_tl_type.PARTICLE_SPAWNER ||
 	type = e_tl_type.POINT_LIGHT ||
 	type = e_tl_type.SPOT_LIGHT)
 	value_type[e_value_type.ROT_POINT] = false
+
+// Bezier
+value_type[e_value_type.BEZIERCONFIG] = true

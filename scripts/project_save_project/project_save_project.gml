@@ -9,6 +9,7 @@ json_save_object_start("project")
 	json_save_var("video_height", project_video_height)
 	json_save_var_bool("video_keep_aspect_ratio", project_video_keep_aspect_ratio)
 	json_save_var("tempo", project_tempo)
+	json_save_var("bezier", bezier)
 
 	json_save_object_start("timeline")
 		json_save_var_bool("repeat", timeline_repeat)

@@ -18,7 +18,6 @@ else
 		fn = project_folder + "\\world.schematic"
 		file_delete_lib(fn)
 		execute(import_file, fn, true)
-		
 		if (!file_exists_lib(fn))
 			return 0
 			

@@ -77,3 +77,8 @@ if (project_video_template = 0)
 tab_control_meter()
 draw_meter("projecttempo", dx, dy, dw, project_tempo, 50, 1, 100, 24, 1, tab.project.tbx_tempo, action_project_tempo, capwid)
 tab_next()
+
+// EXanimation's bezier scale coefficient
+//tab_control_meter()
+//draw_meter("projectbezier", dx, dy, dw, bezier, 50, -3, 3, 0, 0.1, tab.project.tbx_bezier, action_project_bezier, capwid)
+//tab_next()

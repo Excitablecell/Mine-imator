@@ -9,6 +9,9 @@ xx = argument1
 xx2 = xx * 2
 xxm1 = xx - 1
 
+
+//show_debug_message(bezier)
+
 if (xx <= 0)
 	return 0
 if (xx >= 1)
@@ -186,6 +189,10 @@ switch (function)
 			ret += 0.5
 		}
 		return ret
+	}
+	case "easebezier":
+	{
+		return (xx2-(xx*xx)*2) * bezier/100 + xx*xx
 	}
 }
 

@@ -368,6 +368,7 @@ with (shader_map[?shader_color_correction])
 	new_shader_uniform("uBrightness")
 	new_shader_uniform("uSaturation")
 	new_shader_uniform("uVibrance")
+	new_shader_uniform("uTemperature")
 	new_shader_uniform("uColorBurn")
 }
 

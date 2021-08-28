@@ -91,20 +91,36 @@ tab_control(20)
 draw_label(text_get("settingscolor") + ":", dx, dy, fa_left, fa_top)
 tab_next()
 
-tab_control_color()
-draw_button_color("settingscolorinterface", dx, dy, wid, setting_color_interface, c_main, false, action_setting_color_interface)
-draw_button_color("settingscolortext", dx + wid + 8, dy, wid, setting_color_text, c_text, false, action_setting_color_text)
-tab_next()
+if(current_hour < 18  && current_hour > 6){
+	tab_control_color()
+	draw_button_color("settingscolorinterface", dx, dy, wid, setting_color_interface, c_main, false, action_setting_color_interface)
+	draw_button_color("settingscolortext", dx + wid + 8, dy, wid, setting_color_text, c_text, false, action_setting_color_text)
+	tab_next()
+}
+else{
+	tab_control_color()
+	draw_button_color("settingscolorinterface", dx, dy, wid, setting_color_interface, c_main_dark, false, action_setting_color_interface)
+	draw_button_color("settingscolortext", dx + wid + 8, dy, wid, setting_color_text, c_text_dark, false, action_setting_color_text)
+	tab_next()
+}
 
 tab_control_color()
 draw_button_color("settingscolortips", dx, dy, wid, setting_color_tips, c_tips, false, action_setting_color_tips)
 draw_button_color("settingscolortipstext", dx + wid + 8, dy, wid, setting_color_tips_text, c_white, false, action_setting_color_tips_text)
 tab_next()
 
-tab_control_color()
-draw_button_color("settingscolorbuttons", dx, dy, wid, setting_color_buttons, c_secondary, false, action_setting_color_buttons)
-draw_button_color("settingscolorbuttonstext", dx + wid + 8, dy, wid, setting_color_buttons_text, c_white, false, action_setting_color_buttons_text)
-tab_next()
+if(current_hour < 18  && current_hour > 6){
+	tab_control_color()
+	draw_button_color("settingscolorbuttons", dx, dy, wid, setting_color_buttons, c_secondary_dark, false, action_setting_color_buttons)
+	draw_button_color("settingscolorbuttonstext", dx + wid + 8, dy, wid, setting_color_buttons_text, c_white, false, action_setting_color_buttons_text)
+	tab_next()
+}
+else{
+	tab_control_color()
+	draw_button_color("settingscolorbuttons", dx, dy, wid, setting_color_buttons, c_secondary_dark, false, action_setting_color_buttons)
+	draw_button_color("settingscolorbuttonstext", dx + wid + 8, dy, wid, setting_color_buttons_text, c_white, false, action_setting_color_buttons_text)
+	tab_next()
+}
 
 tab_control_color()
 draw_button_color("settingscolorboxes", dx, dy, wid, setting_color_boxes, c_white, false, action_setting_color_boxes)
@@ -121,15 +137,29 @@ draw_button_color("settingscoloralerts", dx, dy, wid, setting_color_alerts, c_al
 draw_button_color("settingscoloralertstext", dx + wid + 8, dy, wid, setting_color_alerts_text, c_text, false, action_setting_color_alerts_text)
 tab_next()
 
-tab_control_color()
-draw_button_color("settingscolortimeline", dx, dy, wid, setting_color_timeline, c_white, false, action_setting_color_timeline)
-draw_button_color("settingscolortimelinetext", dx + wid + 8, dy, wid, setting_color_timeline_text, c_text, false, action_setting_color_timeline_text)
-tab_next()
 
-tab_control_color()
-draw_button_color("settingscolortimelinemarks", dx, dy, wid, setting_color_timeline_marks, c_secondary, false, action_setting_color_timeline_marks)
-draw_button_color("settingscolortimelineboxselect", dx + wid + 8, dy, wid, setting_color_timeline_select_box, c_blue, false, action_setting_color_timeline_select_box)
-tab_next()
+if(current_hour < 18  && current_hour > 6){
+	tab_control_color()
+	draw_button_color("settingscolortimeline", dx, dy, wid, setting_color_timeline, c_white, false, action_setting_color_timeline)
+	draw_button_color("settingscolortimelinetext", dx + wid + 8, dy, wid, setting_color_timeline_text, c_text, false, action_setting_color_timeline_text)
+	tab_next()
+
+	tab_control_color()
+	draw_button_color("settingscolortimelinemarks", dx, dy, wid, setting_color_timeline_marks, c_secondary, false, action_setting_color_timeline_marks)
+	draw_button_color("settingscolortimelineboxselect", dx + wid + 8, dy, wid, setting_color_timeline_select_box, c_secondary, false, action_setting_color_timeline_select_box)
+	tab_next()
+}
+else{
+	tab_control_color()
+	draw_button_color("settingscolortimeline", dx, dy, wid, setting_color_timeline, c_main_dark, false, action_setting_color_timeline)
+	draw_button_color("settingscolortimelinetext", dx + wid + 8, dy, wid, setting_color_timeline_text, c_text_dark, false, action_setting_color_timeline_text)
+	tab_next()
+
+	tab_control_color()
+	draw_button_color("settingscolortimelinemarks", dx, dy, wid, setting_color_timeline_marks, c_secondary_dark, false, action_setting_color_timeline_marks)
+	draw_button_color("settingscolortimelineboxselect", dx + wid + 8, dy, wid, setting_color_timeline_select_box, c_secondary_dark, false, action_setting_color_timeline_select_box)
+	tab_next()
+}
 
 tab_control_color()
 draw_button_color("settingscolorviewportselection", dx, dy, wid, setting_color_viewport_selection, c_white, false, action_setting_color_viewport_selection)

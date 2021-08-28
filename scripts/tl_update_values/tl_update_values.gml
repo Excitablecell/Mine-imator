@@ -100,6 +100,14 @@ else
 tl_update_values_ease(e_value.TRANSITION, "instant", 0)
 var trans = value[e_value.TRANSITION];
 
+if (value_type[e_value_type.BEZIERCONFIG])
+{
+	tl_update_values_ease(e_value.BEZIER, "instant", p)
+	tl_update_values_ease(e_value.BEZIERCONFIG, "instant", p)
+	//tl_update_values_ease(e_value.BEZIERCONFIG, trans, p)
+	//tl_update_values_ease(e_value.BEZIER, trans, p)
+}
+
 // Position
 if (value_type[e_value_type.POSITION])
 {
@@ -179,6 +187,7 @@ if (value_type[e_value_type.LIGHT])
 if (value_type[e_value_type.CAMERA])
 {
 	tl_update_values_ease(e_value.CAM_FOV, trans, p)
+	tl_update_values_ease(e_value.CAM_F, trans, p)
 	
 	tl_update_values_ease(e_value.CAM_BLADE_AMOUNT, trans, p)
 	tl_update_values_ease(e_value.CAM_BLADE_ANGLE, trans, p)
@@ -235,6 +244,7 @@ if (value_type[e_value_type.CAMERA])
 	tl_update_values_ease(e_value.CAM_SATURATION, trans, p)
 	tl_update_values_ease(e_value.CAM_VIBRANCE, trans, p)
 	tl_update_values_ease(e_value.CAM_COLOR_BURN, trans, p)
+	tl_update_values_ease(e_value.CAM_TEMPERATURE, trans, p)
 	
 	tl_update_values_ease(e_value.CAM_GRAIN, trans, p)
 	tl_update_values_ease(e_value.CAM_GRAIN_STRENGTH, trans, p)
